@@ -28,6 +28,13 @@ public class Main {
         System.out.println("The field's perimeter is: " + field1.perimeterCalculation());
         System.out.println("The field's area is: " + field1.areaCalculation());
 
+        Animal dog1 = new Animal();
+        Animal dog2 = new Dog();
+
+        dog1.growl();
+        dog2.growl();
+
+
 
      }
      public static double sumAreas(Rectangle a, Rectangle b){
