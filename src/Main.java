@@ -1,3 +1,6 @@
+//import java.util.Arrays;
+//import java.util.Dictionary;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -15,12 +18,25 @@ public class Main {
         System.out.println("Combined areas of room1 and room2 is: " + sumAreas(room1, room2));
         System.out.println("Combined perimeters of room1 and room2 is: " + sumPerimeters(room1, room2));
 
+        FootballField field1 = new FootballField();
+
+        field1.setLength(10.0);
+        field1.setWidth(20.0);
+        System.out.println(field1.getLength());
+
+
+        System.out.println("The field's perimeter is: " + field1.perimeterCalculation());
+        System.out.println("The field's area is: " + field1.areaCalculation());
+
+
      }
      public static double sumAreas(Rectangle a, Rectangle b){
         return a.areaCalculation() + b.areaCalculation();
      }
     public static double sumPerimeters(Rectangle a, Rectangle b){
         return a.perimeterCalculation() + b.perimeterCalculation();
+
+
     }
 
 }
