@@ -34,6 +34,9 @@ public class Main {
         dog1.growl();
         dog2.growl();
 
+        Shape square1 = new Square(10, 20);
+        System.out.println("the square1's area is: " + square1.calculateArea());
+
 
 
      }
